@@ -1,0 +1,152 @@
+
+.bg-back {
+    background-color: #5A5A5A;
+    color: #fff;
+}
+
+.bg-white-font{
+    color: #fff !important;
+}
+
+.bg-pink {
+    background-color: #feefef;
+    color: #000;
+}
+
+.bg-blue {
+    background-color: #d9f2fa;
+    color: #000;
+}
+
+.bg-gold {
+    background-color: #B39354;
+    color: #fff;
+}
+
+.bg-grey {
+    background-color: #cccccc;
+    color: #fff;
+}
+
+.bg-lightgrey {
+    background-color: #f9f8f6;
+    color: #000;
+}
+
+.bg-black {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+.bg-lightblack {
+    background-color: #2a2a2a;
+    color: #fff;
+}
+
+.bg-lightgreen {
+    background-color: #e5f5f4;
+    color: #35220d;
+}
+
+.bg-yellow {
+    background-color: #cfa920;
+    color: #fff;
+}
+
+.bg-red {
+    background-color: #C14829;
+    color: #fff;
+}
+
+.bg-lightblue {
+    background-color: #e6ebee !important;
+    color: #000 !important;
+}
+
+.toolbar {
+    height: 60px;
+    background: #cccccc54;
+    display: flex;
+    align-items: center;
+    padding: 6px 7%;
+    top: 0;
+    margin-top: -25px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.btn:hover{
+    opacity: 0.75;
+    color: #fff;
+    text-decoration: none;
+}
+
+.select2-container {
+    width: 100% !important;
+}
+
+.fixed-width-button-100 {
+    width: 100px;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .toolbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* @media (max-width: 576px) {
+    #dataTable td,
+    #dataTable th {
+        display: block;
+        width: 100%;
+    }
+} */
+
+/* Custom switch styling */
+.custom-switch {
+    position: relative;
+    display: flex;
+    width: 55px;
+    height: 31px;
+}
+
+.custom-switch input {
+    display: none;
+}
+
+.custom-switch-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    border: 1px solid #adb5bd;
+    border-radius: 20px;
+    background-color: #adb5bd;
+    transition: background-color 0.3s;
+}
+
+.custom-switch-label:before {
+    position: absolute;
+    content: '';
+    height: 15px;
+    width: 15px;
+    left: 4px;
+    bottom: 3px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.custom-switch input:checked + .custom-switch-label {
+    background-color: #4BB543;
+    border-color: #4BB543;
+}
+
+.custom-switch input:checked + .custom-switch-label:before {
+    transform: translateX(30px);
+}

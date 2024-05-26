@@ -1,0 +1,476 @@
+    :root {
+        --grey: #CCCCCC;
+        --black: #0B0B0B;
+        --dark-grey: #B3B3B3;
+        --light-red: #ED7E7E;
+        --blue: #009B8E;
+        --red:#c14829;
+        --light-blue: #E4F4F3;
+        --header-height: 111px;
+        --title-sec: 70px;
+        --title-bar: 70px;
+        --tool-bar: 70px;
+    }
+
+    html,
+    body {
+        font-family: 'sans';
+        font-size: 14px;
+        font-style: normal;
+        color: #5A5A5A;
+        margin: 0px;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+        line-height: 1.5;
+    }
+
+    main {
+        margin-top: calc(var(--header-height) + var(--title-sec));
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    a:hover {
+        cursor: pointer;
+        filter: brightness(80%);
+    }
+
+    button:hover {
+        cursor: pointer;
+        filter: brightness(80%);
+    }
+
+    p,
+    a {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    img {
+        width: auto;
+        max-width: 100%;
+    }
+
+    .img-box,
+    .text-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title {
+        font-weight: 700;
+        color: var(--black);
+    }
+
+    input[type="checkbox"] {
+        width: 16px;
+        height: 16px;
+    }
+    /* responsive */
+
+    .text,
+    label,
+    .date{
+        font-size: 16px;
+    }
+
+
+    input[type=text],
+    input[type=password],
+    input[type=date],
+    input[type=email],
+    input[type=datetime],
+    select {
+        font-size: 16px;
+        height: 50px;
+        border: 1px solid #CCCCCC;
+        border-radius: 5px;
+        padding-left: 1em;
+        box-sizing: border-box;
+        font-family: 'sans';
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+
+    input[type=submit] {
+        font-family: 'sans';
+        font-size: 16px;
+    }
+
+    @media (max-width: 1200px) {
+        .text,
+        label,
+        .date{
+            font-size: 14px;
+        }
+
+        input[type=text],
+        input[type=password],
+        input[type=date],
+        input[type=email],
+        input[type=datetime],
+        select {
+            font-size: 14px;
+            height: 40px;
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -ms-border-radius: 4px;
+            -o-border-radius: 4px;
+        }
+
+        input[type=submit] {
+            font-family: 'sans';
+            font-size: 14px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .text,
+        label,
+        .date{
+            font-size: 12px;
+        }
+        input[type=text],
+        input[type=password],
+        input[type=date],
+        input[type=email],
+        input[type=datetime],
+        select {
+            font-size: 12px;
+            height: 35px;
+            border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -ms-border-radius: 3px;
+            -o-border-radius: 3px;
+        }
+
+        input[type=submit] {
+            font-family: 'sans';
+            font-size: 12px;
+        }
+    }
+
+    @media (max-width: 576px) {
+
+        .text,
+        label,
+        .date{
+            font-size: 10px;
+        }
+
+        input[type=text],
+        input[type=password],
+        input[type=date],
+        input[type=email],
+        input[type=datetime],
+        select {
+            font-size: 10px;
+            height: 30px;
+            border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -ms-border-radius: 3px;
+            -o-border-radius: 3px;
+        }
+
+        input[type=submit] {
+            font-family: 'sans';
+            font-size: 10px;
+        }
+    }
+
+
+    #p1 {
+        margin-top: -100px;
+        margin-bottom: 100px;
+    }
+
+    #p1 .row-1 {
+        justify-content: center;
+    }
+
+    #p1 .row-1 .img-box img {
+        max-width: 500px;
+    }
+
+    #p1 .row-2 {
+        margin-top: 25px;
+    }
+
+    #p1 .row-2 .form {
+        margin: auto;
+        background: #fff;
+        max-width: 800px;
+        width: 800px;
+        padding: 40px 65px 65px 65px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 15px #c3c3c3;
+        height: auto;
+    }
+
+    #p1 .row-2 .form .line-1 {
+        border-bottom: 1px solid var(--grey);
+        padding-bottom: 25px;
+    }
+
+    #p1 .row-2 .form .line-1 .title {
+        font-size: 20px;
+        text-align: center;
+        color: var(--black);
+    }
+
+    #p1 .row-2 .form .input-box {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    #p1 .row-2 .form .input-box label {
+        font-size: 16px;
+    }
+
+    #p1 .row-2 .form .input-box input {
+        height: 50px;
+        font-size: 16px;
+        margin: 0;
+        margin-top: 20px;
+        padding-left: 1em;
+    }
+
+    #p1 .row-2 .form .line-2 {
+        margin-top: 45px;
+    }
+
+    #p1 .row-2 .form .line-3 {
+        margin-top: 30px;
+    }
+
+    #p1 .row-2 .form .line-3 input {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    #p1 .row-2 .form .line-3 .eye-box {
+        position: relative;
+        margin-top: 20px;
+    }
+
+    #p1 .row-2 .form .line-3 .icon-eye {
+        width: 24px;
+        position: absolute;
+        top: 65%;
+        right: 0;
+        transform: translate(-20px, -50%);
+    }
+
+    #p1 .row-2 .form .line-4 .text {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    #p1 .row-2 .form .line-5 {
+        margin-top: 30px;
+        border-top: 1px solid var(--grey);
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    #p1 .row-2 .form .line-5 .text {
+        color: var(--light-red);
+        font-size: 18px;
+    }
+
+    #p1 .row-2 .form .line-6 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #p1 .row-2 .form .line-6 .submit {
+        background: var(--red);
+        width: 220px;
+        height: 60px;
+        margin: auto;
+        margin-top: 20px;
+        border: none;
+        border-radius: 10px;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    #p1 .row-2 .form .line-6 .submit:hover {
+        background: var(--light-red);
+    }
+
+    #p1 .row-2 .form .line-6 .forgot-pass {
+        font-size: 14px;
+        text-align: center;
+        /* text-decoration: underline; */
+        color: var(--black);
+        margin-top: 30px;
+    }
+
+    @media (max-width: 1200px) {
+        #p1 {
+            margin-top: 80px;
+            margin-bottom: 80px;
+        }
+
+        #p1 .row-1 {
+            width: 90vw;
+            margin: auto;
+        }
+
+        #p1 .row-1 .img-box img {
+            width: 300px;
+        }
+
+        #p1 .row-2 .form {
+            width: 80vw;
+            padding: 40px;
+            max-width: 600px;
+        }
+
+        #p1 .row-2 .form .line-1 {
+            padding-bottom: 20px;
+        }
+
+        #p1 .row-2 .form .line-1 .title {
+            font-size: 16px;
+        }
+
+        #p1 .row-2 .form .input-box label {
+            font-size: 14px;
+        }
+
+        #p1 .row-2 .form .input-box input {
+            font-size: 14px;
+            height: 40px;
+            margin-top: 10px;
+        }
+
+        #p1 .row-2 .form .line-2 {
+            margin-top: 30px;
+        }
+
+        #p1 .row-2 .form .line-3 {
+            margin-top: 20px;
+        }
+
+        #p1 .row-2 .form .line-3 input {
+            margin-top: 0;
+        }
+
+        #p1 .row-2 .form .line-3 .eye-box {
+            margin-top: 10px;
+        }
+
+        #p1 .row-2 .form .line-3 .icon-eye {
+            transform: translate(-16px, -50%);
+            width: 20px;
+        }
+
+        #p1 .row-2 .form .line-4 .text {
+            font-size: 12px;
+            margin-top: 10px;
+        }
+
+        #p1 .row-2 .form .line-5 {
+            margin-top: 20px;
+            padding-top: 20px;
+        }
+
+        #p1 .row-2 .form .line-5 .text {
+            font-size: 16px;
+        }
+
+        #p1 .row-2 .form .line-6 .submit {
+            width: 200px;
+            height: 50px;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        #p1 .row-2 .form .line-6 .forgot-pass {
+            font-size: 12px;
+            margin-top: 20px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        #p1 {
+            margin-top: 10vw;
+            margin-bottom: 10vw;
+        }
+
+        #p1 .row-1 .img-box img {
+            width: 50vw;
+        }
+
+        #p1 .row-2 .form {
+            padding: 9vw 5vw;
+        }
+
+        #p1 .row-2 .form .line-1 .title {
+            font-size: 14px;
+        }
+
+        #p1 .row-2 .form .input-box label {
+            font-size: 12px;
+        }
+
+        #p1 .row-2 .form .input-box input {
+            font-size: 12px;
+        }
+
+        #p1 .row-2 .form .line-3 .icon-eye {
+            width: 20px;
+        }
+
+        #p1 .row-2 .form .line-4 .text {
+            font-size: 10px;
+        }
+
+        #p1 .row-2 .form .line-5 .text {
+            font-size: 14px;
+        }
+
+        #p1 .row-2 .form .line-6 .submit {
+            font-size: 14px;
+        }
+
+        #p1 .row-2 .form .line-6 .forgot-pass {
+            font-size: 10px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        #p1 .row-2 {
+            margin-top: 40px;
+        }
+
+        #p1 .row-2 .form {
+            width: 90vw;
+        }
+
+        #p1 .row-2 .form .line-3 .icon-eye {
+            width: 16px;
+        }
+
+        #p1 .row-2 .form .line-5 .text {
+            font-size: 12px;
+        }
+    }

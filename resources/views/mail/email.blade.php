@@ -1,0 +1,4 @@
+<?
+echo "<!DOCTYPE html>
+{{ html }}
+?> ?>

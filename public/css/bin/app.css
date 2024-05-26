@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Serif JP", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f0f2f5;
+    color: #5f5f5f;
+}
+
+a{
+    text-decoration: none;
+    color: #5f5f5f;
+}
+
+.container{
+    padding: 20px 8%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f0f2f5;
+    color: #5f5f5f;
+}
+
+/*-----------media query for small screen--------------- */
+@media only screen and (max-width:600px){
+
+    .navbar-menu ul li a span{
+        display: none;
+    }
+
+    .navbar-menu ul li a{
+        padding: 0;
+        margin: 5px;
+    }
+
+    .nav-profile-img{
+        width: 30px;
+    }
+
+}
+
+
